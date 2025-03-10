@@ -92,7 +92,7 @@ Stores performance metrics for each sprint.
 - **`blockers`** → Number of major blockers faced.  
 - **`code_review_time`** (DECIMAL) → Avg. time taken for code reviews (in hours).  
 - **`bugs_found`** → Number of bugs found during the sprint.  
-- **`sentiment_score`** (DECIMAL) → Team sentiment score based on feedback.  
+- **`sentiment_score`** (INTEGER) → Team sentiment score based on feedback.  
 - **`sprint_duration`** → Total sprint duration in days.  
 - **`test_automation`** (BOOLEAN) → Whether test automation was used.  
 - **`domain_complexity`** (INTEGER) → Rating (1-5) of domain complexity.  
@@ -104,7 +104,6 @@ Stores performance metrics for each sprint.
 Stores AI-predicted sprint performance.  
 - **`id`** (PK) → Unique identifier.  
 - **`sprint_id`** (FK → `sprints.id`) → Sprint for which prediction is made.  
-- **`predicted_sprint_velocity`** (DECIMAL) → Expected velocity (completed story points per sprint).  
 - **`predicted_story_points`** (INTEGER) → Predicted story points completion.  
 - **`actual_completed_story_points`** (INTEGER, NULLABLE) → Actual story points completed (updated after sprint).  
 - **`created_at`** → Timestamp when prediction was generated.  
