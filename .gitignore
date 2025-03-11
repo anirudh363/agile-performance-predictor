@@ -3,4 +3,7 @@
 /backend/.vscode/
 /backend/.venv/
 /backend/tables.sql
-/backend/*/__pycache__/
+
+/backend/models/__pycache__/
+/backend/routes/__pycache__/
+/backend/controllers/__pycache__/
