@@ -11,7 +11,7 @@ def create():
     data = request.get_json()
     if not check_if_sprint_exists(data["sprint_id"]):
         return jsonify({"message": "Sprint not found"}), 404
-    if not check_if_user_exists(data["user_id"]):
+    if "user" in data and not check_if_user_exists(data["user"]):
         return jsonify({"message": "User not found"}), 404
     result = create_sprint_prediction(data)
     if "error" not in result:
