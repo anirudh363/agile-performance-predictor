@@ -1,4 +1,4 @@
-from database_config import db
+from config.database_config import db
 
 
 

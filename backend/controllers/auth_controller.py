@@ -1,5 +1,5 @@
-from models.users_model import User
-from database_config import db
+from database.users_model import User
+from config.database_config import db
 from flask_bcrypt import generate_password_hash, check_password_hash
 from flask_jwt_extended import create_access_token
 

@@ -1,5 +1,5 @@
-from models.sprint_metrics_model import SprintMetrics
-from database_config import db
+from database.sprint_metrics_model import SprintMetrics
+from config.database_config import db
 
 
 def create_sprint_metrics(data):

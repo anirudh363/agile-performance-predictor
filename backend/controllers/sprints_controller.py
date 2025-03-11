@@ -1,5 +1,5 @@
-from models.sprints_model import Sprints
-from database_config import db
+from database.sprints_model import Sprints
+from config.database_config import db
 
 
 def check_if_sprint_exists(sprint_id):

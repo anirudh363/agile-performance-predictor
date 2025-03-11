@@ -1,9 +1,9 @@
 from flask import Flask 
 from flask_jwt_extended import JWTManager
 
-from database_config import SQLALCHEMY_DATABASE_URI, SQLALCHEMY_TRACK_MODIFICATIONS
-from database_config import db
-from auth_config import JWT_SECRET_KEY
+from config.database_config import SQLALCHEMY_DATABASE_URI, SQLALCHEMY_TRACK_MODIFICATIONS
+from config.database_config import db
+from config.auth_config import JWT_SECRET_KEY
 
 from routes.teams import teams_bp
 from routes.sprints import sprints_bp
