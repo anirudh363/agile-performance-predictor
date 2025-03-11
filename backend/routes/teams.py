@@ -1,11 +1,14 @@
 from flask import Blueprint, request, jsonify
 from controllers.teams_controller import create_team, get_all_teams, get_team_by_id, update_team, delete_team
+from controllers.auth_controller import check_if_user_exists
 
 teams_bp = Blueprint("teams", __name__)
 
 @teams_bp.route("/", methods=["POST"])
 def create():
     data = request.get_json()
+    if "user" in data and not check_if_user_exists(data["user"]):
+        return jsonify({"message": "User not found"}), 404
     result = create_team(data)
     if "error" not in result:
         return jsonify({"message": "Team Created Successfully", "team": result}), 201
