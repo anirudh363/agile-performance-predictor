@@ -1,5 +1,5 @@
-from models.training_data_model import TrainingData
-from database_config import db
+from database.training_data_model import TrainingData
+from config.database_config import db
 
 
 def create_training_data(data):

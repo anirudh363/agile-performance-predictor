@@ -1,5 +1,5 @@
-from models.sprint_predictions_model import SprintPredictions
-from database_config import db
+from database.sprint_predictions_model import SprintPredictions
+from config.database_config import db
 
 def create_sprint_prediction(data):
     try:

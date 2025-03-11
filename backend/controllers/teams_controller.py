@@ -1,5 +1,5 @@
-from models.teams_model import Team
-from database_config import db
+from database.teams_model import Team
+from config.database_config import db
 
 
 def check_if_team_exists(team_id):

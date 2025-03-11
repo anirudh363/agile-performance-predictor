@@ -1,4 +1,4 @@
-from database_config import db
+from config.database_config import db
 
 class Sprints(db.Model):
     __tablename__ = 'sprints'
