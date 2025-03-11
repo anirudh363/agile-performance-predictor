@@ -8,7 +8,10 @@ def check_if_team_exists(team_id):
 
 def create_team(data):
     try:
-        new_team = Team(name=data["name"])
+        new_team = Team(
+            name=data["name"], 
+            user_id=data["user_id"] if "user_id" in data else None
+        )
         db.session.add(new_team)
         db.session.commit()
         return new_team.to_dict()
@@ -27,6 +30,8 @@ def update_team(team_id, data):
     team = Team.query.get(team_id)
     if team:
         team.name = data.get("name", team.name)
+        if "user_id" in data:
+            team.user_id = data["user_id"]
         db.session.commit()
         return team.to_dict()
     return None
