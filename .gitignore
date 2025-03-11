@@ -3,3 +3,4 @@
 /backend/.vscode/
 /backend/.venv/
 /backend/tables.sql
+/backend/*/__pycache__/
