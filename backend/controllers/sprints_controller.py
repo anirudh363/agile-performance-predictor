@@ -1,8 +1,20 @@
-from models.sprints_model import db, Sprints
+from models.sprints_model import Sprints
+from database_config import db
+
+
+def check_if_sprint_exists(sprint_id):
+    sprint = Sprints.query.get(sprint_id)
+    return True if sprint else False
 
 def create_sprint(data):
     try:
-        new_sprint = Sprints(team_id=data["team_id"], sprint_index=data["sprint_index"], start_date=data["start_date"], end_date=data["end_date"], planned_story_points=data["planned_story_points"])
+        new_sprint = Sprints(
+            team_id=data["team_id"], 
+            sprint_index=data["sprint_index"], 
+            start_date=data["start_date"], 
+            end_date=data["end_date"], 
+            planned_story_points=data["planned_story_points"]
+            )
         db.session.add(new_sprint)
         db.session.commit()
         return new_sprint.to_dict()
@@ -10,7 +22,7 @@ def create_sprint(data):
         db.session.rollback()
         return {"error": str(e)}
     
-def get_all_sprints():
+def get_all_sprints(): 
     return [sprint.to_dict() for sprint in Sprints.query.all()]
 
 def get_sprint_by_id(sprint_id):

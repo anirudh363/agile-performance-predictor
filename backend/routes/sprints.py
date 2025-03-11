@@ -1,11 +1,15 @@
 from flask import Blueprint, request, jsonify
 from controllers.sprints_controller import create_sprint, get_all_sprints, get_sprint_by_id, update_sprint, delete_sprint
+from controllers.teams_controller import check_if_team_exists
 
 sprints_bp = Blueprint("sprints", __name__)
+
 
 @sprints_bp.route("/", methods=["POST"])
 def create():
     data = request.get_json()
+    if not check_if_team_exists(data["team_id"]):
+        return jsonify({"message": "Team not found"}), 404
     result = create_sprint(data)
     if "error" not in result:
         return jsonify({"message": "Sprint Created Successfully", "sprint": result}), 201

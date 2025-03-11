@@ -1,4 +1,10 @@
-from models.teams_model import db, Team
+from models.teams_model import Team
+from database_config import db
+
+
+def check_if_team_exists(team_id):
+    team = Team.query.get(team_id)
+    return True if team else False
 
 def create_team(data):
     try:
