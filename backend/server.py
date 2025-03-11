@@ -13,7 +13,7 @@ from routes.auth import auth_bp
 from routes.sprint_predictions import sprint_predictions_bp
 
 app = Flask(__name__)
-app.config["SQLALCHEMY_DATABASE_URI"] = SQLALCHEMY_DATABASE_URI_LOCAL
+app.config["SQLALCHEMY_DATABASE_URI"] = SQLALCHEMY_DATABASE_URI_TEMBO
 app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = SQLALCHEMY_TRACK_MODIFICATIONS
 app.config["JWT_SECRET_KEY"] = JWT_SECRET_KEY
 
