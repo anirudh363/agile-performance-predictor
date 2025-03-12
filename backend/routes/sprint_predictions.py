@@ -1,4 +1,4 @@
-from flask import Blueprint, request, jsonify
+from flask import Blueprint, request, jsonify, g
 from controllers.sprint_predictions_controller import create_sprint_prediction, get_all_sprint_predictions, get_sprint_prediction_by_id, update_sprint_prediction, delete_sprint_prediction
 from controllers.sprints_controller import check_if_sprint_exists
 from controllers.auth_controller import check_if_user_exists
@@ -34,6 +34,9 @@ def get_one(sprint_prediction_id):
 @sprint_predictions_bp.route("/<int:sprint_prediction_id>", methods=["PUT"])
 def update(sprint_prediction_id):
     data = request.get_json()
+    if "user" in data and not check_if_user_exists(data["user"]):
+        return jsonify({"message": "User not found"}), 404
+
     sprint_prediction = update_sprint_prediction(sprint_prediction_id, data)
     if sprint_prediction:
         return jsonify({"message": "Sprint Prediction Updated Successfully", "sprint_prediction": sprint_prediction}), 200
