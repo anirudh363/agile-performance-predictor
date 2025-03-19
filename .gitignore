@@ -44,11 +44,22 @@ yarn-error.log*
 # ===============================
 
 # Dependencies
+/frontend/node_modules
+/frontend/node_modules/*
+/frontend/.pnp
+/frontend/.pnp.*
+
 /node_modules
 /.pnp
 .pnp.*
 
 # Yarn
+/frontend/.yarn/*
+!/frontend/.yarn/patches
+!/frontend/.yarn/plugins
+!/frontend/.yarn/releases
+!/frontend/.yarn/versions
+
 .yarn/*
 !.yarn/patches
 !.yarn/plugins
@@ -56,6 +67,8 @@ yarn-error.log*
 !.yarn/versions
 
 # Testing
+/frontend/coverage
+/frontend/.nyc_output
 /coverage
 
 # Next.js output
@@ -65,11 +78,14 @@ yarn-error.log*
 /out/
 
 # Production build
+/frontend/build
 /build
 
 # Debugging files
+/frontend/next-env.d.ts
 next-env.d.ts
 *.tsbuildinfo
 
 # Vercel deployment
+/frontend/.vercel
 .vercel
