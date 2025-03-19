@@ -1,3 +1,26 @@
+# ===============================
+# GLOBAL IGNORE (Root-Level)
+# ===============================
+
+# Misc system files
+.DS_Store
+*.pem
+
+# Log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# Ignore all environment files (except explicitly tracked ones)
+.env*
+.env.*.local
+.env.local
+
+# ===============================
+# BACKEND IGNORE (Python & Database)
+# ===============================
+
 /backend/__pycache__/
 /backend/.env
 /backend/.vscode/
@@ -10,6 +33,59 @@
 /backend/database/__pycache__/
 /backend/controllers/__pycache__/
 
+/backend/models/data/*.csv  
 /backend/models/data/agile_dataset_ananth.csv
 /backend/models/data/agile_dataset_anirudh.csv
 /backend/models/data/agile_dataset_bruce.csv
+
+
+# ===============================
+# FRONTEND IGNORE (Next.js & Node)
+# ===============================
+
+# Dependencies
+/frontend/node_modules
+/frontend/node_modules/*
+/frontend/.pnp
+/frontend/.pnp.*
+
+/node_modules
+/.pnp
+.pnp.*
+
+# Yarn
+/frontend/.yarn/*
+!/frontend/.yarn/patches
+!/frontend/.yarn/plugins
+!/frontend/.yarn/releases
+!/frontend/.yarn/versions
+
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/versions
+
+# Testing
+/frontend/coverage
+/frontend/.nyc_output
+/coverage
+
+# Next.js output
+/frontend/.next
+/frontend/out
+/.next/
+/out/
+
+# Production build
+/frontend/build
+/build
+
+# Debugging files
+/frontend/next-env.d.ts
+next-env.d.ts
+*.tsbuildinfo
+
+# Vercel deployment
+/frontend/.vercel
+.vercel
