@@ -1,5 +1,7 @@
 Flask
 psycopg2-binary
 python-dotenv
-SQLAlchemy
+Flask-SQLAlchemy
 Flask-Migrate
+Flask-Bcrypt
+Flask-JWT-Extended
