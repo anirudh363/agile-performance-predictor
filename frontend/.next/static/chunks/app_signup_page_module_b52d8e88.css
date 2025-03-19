@@ -1,0 +1,228 @@
+/* [project]/app/signup/page.module.css [app-client] (css) */
+.page-module__iRBh-W__login_page {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  background-color: #f4f4f4;
+}
+
+.page-module__iRBh-W__login_container {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.page-module__iRBh-W__login_box {
+  z-index: 10;
+  border-radius: 10px;
+  width: 70%;
+  height: 70%;
+  text-align: center;
+  margin-left: 10%;
+}
+
+.page-module__iRBh-W__h1 {
+  margin-bottom: 1.5rem;
+  font-family: Poller One, serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.page-module__iRBh-W__form {
+  display: flex;
+  color: #000;
+  flex-direction: column;
+  gap: 10px;
+  background-color: #fff;
+  padding: 30px;
+  width: 35rem;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px #000;
+  padding-top: 2em;
+  padding-bottom: 5em;
+}
+
+.page-module__iRBh-W__form .page-module__iRBh-W__button {
+  align-self: flex-end;
+}
+
+.page-module__iRBh-W__input_label {
+  color: #151717;
+  font-weight: 600;
+  margin-right: 100%;
+  font-family: Righteous, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.page-module__iRBh-W__confirm_password {
+  color: #151717;
+  font-weight: 600;
+  margin-right: 70%;
+  font-family: Righteous, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.page-module__iRBh-W__inputForm {
+  border: 1.5px solid #9c9d9c;
+  border-radius: 10px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+  transition: all .2s ease-in-out;
+}
+
+.page-module__iRBh-W__input {
+  margin-left: 10px;
+  border-radius: 10px;
+  border: none;
+  width: 85%;
+  height: 100%;
+  background-color: #fff;
+  color: #000;
+  font-size: large;
+  font-family: Gruppo, sans-serif;
+  font-weight: 800;
+  font-style: normal;
+  letter-spacing: 1px;
+}
+
+.page-module__iRBh-W__input:focus {
+  outline: none;
+}
+
+.page-module__iRBh-W__inputForm:focus-within {
+  border: 1.5px solid #000;
+}
+
+.page-module__iRBh-W__forgot_password {
+  color: #2d79f3;
+  cursor: pointer;
+  margin-left: 60%;
+  font-family: Righteous, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.page-module__iRBh-W__span {
+  font-size: 14px;
+  margin-left: 5px;
+  color: #2d79f3;
+  font-weight: 500;
+  cursor: pointer;
+  font-family: Righteous, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.page-module__iRBh-W__button_submit {
+  margin: 20px 0 10px;
+  background-color: #151717;
+  border: none;
+  color: #fff;
+  font-size: 15px;
+  border-radius: 10px;
+  height: 50px;
+  width: 100%;
+  cursor: pointer;
+  font-family: Righteous, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  letter-spacing: 2px;
+}
+
+.page-module__iRBh-W__button_submit:hover {
+  background-color: #252727;
+}
+
+.page-module__iRBh-W__paragraph {
+  text-align: center;
+  color: gray;
+  font-size: 14px;
+  margin: 5px 0;
+  font-family: Righteous, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.page-module__iRBh-W__btn {
+  margin-top: 10px;
+  width: 100%;
+  height: 50px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  gap: 10px;
+  border: 1px solid #ededef;
+  background-color: #fff;
+  cursor: pointer;
+  transition: all .2s ease-in-out;
+}
+
+.page-module__iRBh-W__btn:hover {
+  border: 1px solid #2d79f3;
+}
+
+.page-module__iRBh-W__eye_svg {
+  margin-right: .5rem;
+  cursor: pointer;
+}
+
+.page-module__iRBh-W__login_page:before {
+  z-index: 2;
+  content: "";
+  position: absolute;
+  right: 0;
+  width: 60%;
+  height: 100%;
+  background: linear-gradient(#0003, #0003), url("../media/signup-bg.090c336e.jpg") center no-repeat;
+  background-size: cover;
+  border-top-left-radius: 10%;
+  border-bottom-left-radius: 10%;
+}
+
+.page-module__iRBh-W__content_wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 900px;
+  margin: auto;
+  margin-left: 15%;
+}
+
+.page-module__iRBh-W__additional_info {
+  position: absolute;
+  right: 0%;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20%;
+  background: #ee89e9e6;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px #0000001a;
+  z-index: 2;
+  text-align: center;
+}
+
+@media (width <= 768px) {
+  .page-module__iRBh-W__login_page {
+    flex-direction: column;
+  }
+
+  .page-module__iRBh-W__login_container {
+    width: 100%;
+  }
+
+  .page-module__iRBh-W__login_page:before {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=app_signup_page_module_b52d8e88.css.map*/

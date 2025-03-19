@@ -1,3 +1,26 @@
+# ===============================
+# GLOBAL IGNORE (Root-Level)
+# ===============================
+
+# Misc system files
+.DS_Store
+*.pem
+
+# Log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# Ignore all environment files (except explicitly tracked ones)
+.env*
+.env.*.local
+.env.local
+
+# ===============================
+# BACKEND IGNORE (Python & Database)
+# ===============================
+
 /backend/__pycache__/
 /backend/.env
 /backend/.vscode/
@@ -10,6 +33,41 @@
 /backend/database/__pycache__/
 /backend/controllers/__pycache__/
 
+/backend/models/data/*.csv  
 /backend/models/data/agile_dataset_ananth.csv
 /backend/models/data/agile_dataset_anirudh.csv
 /backend/models/data/agile_dataset_bruce.csv
+
+
+# ===============================
+# FRONTEND IGNORE (Next.js & Node)
+# ===============================
+
+# Dependencies
+/node_modules
+/.pnp
+.pnp.*
+
+# Yarn
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/versions
+
+# Testing
+/coverage
+
+# Next.js output
+/.next/
+/out/
+
+# Production build
+/build
+
+# Debugging files
+next-env.d.ts
+*.tsbuildinfo
+
+# Vercel deployment
+.vercel
