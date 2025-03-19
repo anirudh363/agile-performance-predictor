@@ -10,3 +10,6 @@
 /backend/database/__pycache__/
 /backend/controllers/__pycache__/
 
+/backend/models/data/agile_dataset_ananth.csv
+/backend/models/data/agile_dataset_anirudh.csv
+/backend/models/data/agile_dataset_bruce.csv
