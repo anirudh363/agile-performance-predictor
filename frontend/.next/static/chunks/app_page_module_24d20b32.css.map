@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["file://X%3A/Agile-Performance-Prediction/agile-performance-predictor/frontend/app/page.module.css"],"sourcesContent":[".main {\r\n  background-color: lightgray;\r\n}\r\n\r\n.heading {\r\n  color: red;\r\n  font-size: 24px;\r\n}\r\n"],"names":[],"mappings":"AAAA;;;;AAIA","debugId":null}},
-    {"offset": {"line": 9, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}}]
-}
