@@ -1,6 +1,6 @@
 import styles from './page.module.css';
 import Image from 'next/image';
-import Logo from '../../../public/assets/logo.png';
+import Logo from '../../../public/assets/logo-nobg.png';
 import Link from 'next/link';
 
 export default function Navbar() {

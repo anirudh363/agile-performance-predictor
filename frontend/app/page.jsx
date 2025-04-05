@@ -12,12 +12,12 @@ export default function Home() {
         <HomePage />
       </div>
 
-      <section id="about" className={styles.section}>
+      {/* <section id="about" className={styles.section}>
         About Us Content
       </section>
       <section id="contact" className={styles.section}>
         Contact Content
-      </section>
+      </section> */}
     </div>
   );
 }

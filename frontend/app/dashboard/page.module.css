@@ -1,0 +1,141 @@
+@keyframes fillGreen {
+  from {
+    background-color: #d5d5da;
+  }
+  to {
+    background-color: #8bc435;
+  }
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.wrapper {
+  display: flex;
+  /* flex-direction: column; */
+  align-items: center;
+  margin-top: 5rem;
+}
+
+.progressVertical {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+  padding-left: 2rem;
+}
+
+.stepBlock {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+}
+
+.stepContent {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  z-index: 2;
+}
+
+.circle {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  background: #fff;
+  border: 1px solid rgb(176, 172, 172);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  transition: background-color 0.3s ease;
+}
+
+.label {
+  color: #b5b5ba;
+  font-size: 16px;
+  text-align: center;
+}
+
+.title {
+  color: #b5b5ba;
+  font-size: 14px;
+  text-align: left;
+  margin: 0;
+  transition: color 0.3s ease;
+}
+
+.verticalLineSegment {
+  width: 4px;
+  height: 40px;
+  background-color: #d5d5da;
+  /* margin: 0 auto; */
+  position: relative;
+  left: 15%;
+  z-index: 1;
+  transition: background-color 0.3s ease;
+}
+
+.verticalLineSegment.done {
+  background-color: #8bc435;
+  animation: fillGreen 0.6s ease forwards;
+}
+
+.done {
+  background-color: #8bc435 !important;
+  animation: fillGreen 0.6s ease forwards;
+}
+
+.done .label {
+  color: #fff;
+  background: #8bc435;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: fillGreen 0.6s ease forwards;
+}
+
+.done .title {
+  color: #444;
+}
+
+.active .label {
+  color: #fff;
+  background: #0c95be;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.active .title {
+  color: #0c95be;
+}
+
+.submitButton {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #0c95be;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submitButton:disabled {
+  background-color: #aaa;
+  cursor: not-allowed;
+}
