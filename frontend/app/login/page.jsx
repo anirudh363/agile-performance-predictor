@@ -77,8 +77,9 @@ export default function Login() {
                   Forgot Password?
                 </span>
               </div>
-
-              <button className={styles.button_submit}>Sign In</button>
+              <Link href="./dashboard">
+                <button className={styles.button_submit}>Sign In</button>
+              </Link>
 
               <p className={styles.p}>
                 Don't have an account?{" "}
@@ -88,7 +89,6 @@ export default function Login() {
               </p>
             </form>
           </div>
-
         </div>
       </div>
     </>

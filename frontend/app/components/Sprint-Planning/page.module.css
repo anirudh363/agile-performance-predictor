@@ -1,0 +1,242 @@
+.container {
+  position: absolute;
+  top: 4%;
+  right: 15rem;
+  width: 50%;
+  font-family: sans-serif;
+  background: #fff;
+  padding: 16px;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+}
+
+.title{
+  font-size: xx-large;
+  margin-bottom: 2%;
+}
+
+.toggle {
+  display: flex;
+  justify-content: space-between;
+  background-color: #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 4px;
+  width: 100%;
+  margin-bottom: 16px;
+}
+
+.toggle button {
+  flex: 1;
+  padding: 10px;
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 14px;
+  color: #333;
+  /* transition: background-color 0.3s; */
+  border-radius: 10px;
+}
+
+.toggle button.active {
+  background-color: white;
+  color: black;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.scrollWrapper {
+  max-height: 450px; /* Set to your preferred height */
+  overflow-y: auto;
+  overflow-x: hidden;
+  /* padding: 2rem; */
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.scrollWrapper::-webkit-scrollbar {
+  width: 6px;
+}
+
+.scrollWrapper::-webkit-scrollbar-thumb {
+  background: #aaa;
+  border-radius: 3px;
+}
+
+.scrollWrapper::-webkit-scrollbar-thumb:hover {
+  background: #777;
+}
+
+
+
+.formContainer {
+  display: inline-block;
+  min-width: 48rem; /* or whatever is wider than the container */
+  white-space: normal;
+  margin: 2%;
+}
+
+.form_title{
+    font-size: larger;
+}
+
+
+.textarea {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 12px;
+  border: 1px solid #ccc;
+  resize: vertical;
+  outline: none;
+  transition: border-color 0.2s ease;
+  background-color: #fff;
+}
+
+.textarea:focus {
+  border-color: #0070f3;
+}
+
+.headerRow {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.stepNumber {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background-color: #eee;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.complete {
+  margin-left: auto;
+  background-color: #b4f5b4;
+  color: #0a480a;
+  padding: 4px 12px;
+  border-radius: 9999px;
+  font-size: 14px;
+}
+
+.required {
+  margin-left: auto;
+  background-color: #fce1e1;
+  color: #ab2e2e;
+  padding: 4px 12px;
+  border-radius: 9999px;
+  font-size: 14px;
+}
+
+.form_1{
+    background-color: rgb(211, 209, 209);
+    padding: 2%;
+    border-radius: 10px;
+}
+
+.label {
+  font-weight: 500;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.inputField {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #333;
+  border-radius: 8px;
+  background-color: white;
+  appearance: none;
+}
+
+.info {
+  display: flex;
+  align-items: flex-start; /* aligns text top with icon */
+  gap: 10px;
+  background-color: #baacf0; /* soft purple background */
+  color: #333;
+  padding: 16px 20px;
+  border-left: 4px solid #250dad; /* purple accent */
+  border-radius: 8px;
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  margin-top: 2%;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.info svg {
+  flex-shrink: 0;
+  margin-top: 2px; /* tweak if needed */
+  width: 18px;
+  height: 18px;
+  fill: #6a0dad;
+}
+
+.buttonWrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+
+.submitButton, .previousButton {
+  padding: 10px 20px;
+  width: auto; /* or keep fixed width if needed */
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background 0.3s;
+}
+
+.separator {
+  margin: 20px 0;
+  border: none;
+  border-top: 1px solid black;
+}
+
+.formFieldRow {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.formField {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-width: 220px;
+}
+
+.label {
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 4px;
+  color: #333;
+}
+
+.inputDate {
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  background-color: #fff;
+  transition: border 0.2s ease;
+}
+
+.inputDate:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.15);
+}
+

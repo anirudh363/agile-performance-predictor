@@ -1,0 +1,22 @@
+.info {
+  display: flex;
+  align-items: flex-start; /* aligns text top with icon */
+  gap: 10px;
+  background-color: #f3f0ff; /* soft purple background */
+  color: #333;
+  padding: 16px 20px;
+  border-left: 4px solid #6a0dad; /* purple accent */
+  border-radius: 8px;
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.info svg {
+  flex-shrink: 0;
+  margin-top: 2px; /* tweak if needed */
+  width: 18px;
+  height: 18px;
+  fill: #6a0dad;
+}

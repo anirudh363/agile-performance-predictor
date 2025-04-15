@@ -1,0 +1,192 @@
+/* Animation for green fill */
+@keyframes fillGreen {
+  from {
+    background-color: #d5d5da;
+  }
+  to {
+    background-color: #8bc435;
+  }
+}
+
+.navbar {
+  display: flex;
+  align-items: center; /* vertically center items */
+  gap: 10px; /* space between image and text (optional) */
+  margin: 1%;
+}
+
+
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: row; /* Changed from column to row */
+  align-items: flex-start;
+  height: 100%;
+  padding: 2rem;
+}
+
+.progressVertical {
+ position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-right: 40px; /* Adds spacing between progress bar and main content */
+  min-width: 180px;   /* Ensures it's not too narrow */
+}
+
+.verticalLine {
+  position: absolute;
+  width: 4px;
+  background-color: #d5d5da;
+  top: 0;
+  bottom: 0;
+  left: 20px; /* align with center of the circles */
+  z-index: 0;
+  transition: background-color 0.3s ease;
+}
+
+.verticalLine.done {
+  background-color: #8bc435;
+  animation: fillGreen 0.6s ease forwards;
+}
+
+.stepBlock {
+  position: relative;
+  z-index: 1;
+  margin: 20px 0;
+}
+
+.stepContent {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.circle {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  background: #fff;
+  border: 1px solid #d5d5da;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  transition: background-color 0.3s ease;
+}
+
+.label {
+  color: #b5b5ba;
+  font-size: 16px;
+  text-align: center;
+}
+
+/* Title next to circle */
+.title {
+  color: #b5b5ba;
+  font-size: 14px;
+  text-align: left;
+  margin: 0;
+  transition: color 0.3s ease;
+}
+
+.done {
+  background-color: #8bc435 !important;
+  animation: fillGreen 0.6s ease forwards;
+}
+
+.done .label {
+  color: #fff;
+  background: #8bc435;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: fillGreen 0.6s ease forwards;
+}
+
+.done .title {
+  color: #444;
+}
+
+.active .label {
+  color: #fff;
+  background: #0c95be;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.active .title {
+  color: #0c95be;
+}
+
+
+.bottomLeftImage {
+  position: fixed;
+  width: 30%;
+  height: 50%;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
+  padding: 10px;
+  pointer-events: none; /* so it doesn't block clicks */
+}
+
+/* form */
+
+
+.toggle button {
+  flex: 1;
+  padding: 10px;
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 14px;
+  color: #333;
+  /* transition: background-color 0.3s; */
+  border-radius: 10px;
+}
+
+.toggle button.active {
+  background-color: white;
+  color: black;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.formContent {
+  padding: 0.5rem 0;
+}
+
+.form_1 > input,
+.form_2 > select {
+  padding: 8px;
+  width: 100%;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  margin-top: 10px;
+}
+
+.rightStrip {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 7rem; /* adjust width as needed */
+  height: 100vh;
+  background-color: #a965d9; /* purple */
+  z-index: 1; /* ensure it's behind the main content */
+}
+

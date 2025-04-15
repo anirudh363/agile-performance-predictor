@@ -1,0 +1,90 @@
+.container {
+  position: absolute;
+  top: 6%;
+  right: 15rem;
+  width: 50%;
+  font-family: sans-serif;
+  background: #fff;
+  padding: 16px;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+}
+
+.toggle {
+  display: flex;
+  justify-content: space-between;
+  background-color: #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 4px;
+  width: 100%;
+  margin-bottom: 16px;
+}
+
+.toggle button {
+  flex: 1;
+  padding: 10px;
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 14px;
+  color: #333;
+  /* transition: background-color 0.3s; */
+  border-radius: 10px;
+}
+
+.toggle button.active {
+  background-color: white;
+  color: black;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.formContent {
+  padding: 0.5rem 0;
+}
+
+
+.form_1 > input,
+.form_2 select {
+  padding: 8px;
+  width: 100%;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  margin-top: 10px;
+}
+
+.stupidTagLine{
+    margin-top: 0.5rem;
+    font-size: smaller;
+}
+
+.form_1>input{
+    background-color: rgb(240, 169, 232);
+}
+
+.buttonWrapper {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+}
+
+
+.submitButton {
+  padding: 10px 20px;
+  width: auto; /* or keep fixed width if needed */
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background 0.3s;
+}
+
+
+
+.submitButton:disabled {
+  background-color: #aaa;
+  cursor: not-allowed;
+}
